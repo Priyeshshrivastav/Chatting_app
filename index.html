@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>💖Chat With AI</title>
+
+  <script type="module" src="script.js">
+  </script>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="setup">
+    <h3>💖 Start chating with your Favourite Person</h3>
+    <label>Your Name:</label>
+    <input id="your-name" placeholder="e.g. Priyesh" />
+    <label>Crush/Friend Name:</label>
+    <input id="crush-name" placeholder="e.g. Aisha" />
+    <label>Relationship Type:</label>
+    <select id="relationship-type">
+      <option value="crush">Crush</option>
+      <option value="close friend">Close Friend</option>
+      <option value="best friend">Best Friend</option>
+      <option value="ex">Ex</option>
+      <option value="partner">Girlfriend/Boyfriend</option>
+    </select>
+    <button onclick="startChat()">Start Chatting</button>
+  </div>
+
+  <div id="chat">
+    <div id="chat-header">
+      <img src="image.jpg" style="background-color: #075e54;" alt="crush" />
+      <span id="chat-header-name">Crush</span>
+    </div>
+    <div id="chat-box"></div>
+    <div id="chat-input-area">
+      <input id="user-input" placeholder="Type a Message...... 😊" onkeydown="if(event.key==='Enter') sendMessage()" />
+    </div>
+  </div>
+
+</body>
+</html>
